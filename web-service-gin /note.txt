@@ -1,0 +1,8 @@
+To transform slice into JSON formate use Context.IndentedJSON(code Int, Obj any)
+the code Int will be the HTTP status
+caution when use IndentedJSON in development since it is more CPU intensive
+use Context.JSON() instead
+
+{use pointer to make a reference to Context }
+
+func function(c *gin.Context) { c.IndentedJSON() OR c.JSON()}
